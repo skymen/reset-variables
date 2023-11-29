@@ -2,7 +2,7 @@
 module.exports = {
   addonType: "plugin",
   id: "skymen_reset_variable",
-  name: "reset_variable",
+  name: "Reset Variable",
   version: "1.0.0.2",
   category:
     // "3d",
@@ -18,7 +18,7 @@ module.exports = {
   author: "skymen",
   website: "https://www.construct.net",
   documentation: "https://www.construct.net",
-  description: "Description",
+  description: "Reset any event variable to its initial value",
   // addonUrl: "https://www.construct.net/en/make-games/addons/####/XXXX", // displayed in auto-generated docs
   // githubUrl: "https://github.com/skymen/XXXX", // displays latest release version in auto-generated docs
   // icon: "icon.svg", // defaults to "icon.svg" if omitted
