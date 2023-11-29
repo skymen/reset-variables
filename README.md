@@ -1,4 +1,4 @@
-<img src="./src/icon.svg" width="100" /><br>
+<img src="./examples/cover.png" width="150" /><br>
 # Reset Variable <br>
 Reset any event variable to its initial value <br>
 <br>
