@@ -51,5 +51,11 @@ function getInstanceJs(parentClass, scriptInterface, addonTriggers, C3) {
           .find((x) => x.GetName().toLowerCase() === varName.toLowerCase())
       );
     }
+
+    _ResetAllLocalVariables() {
+      this._runtime._eventSheetManager
+        .GetAllLocalVariables()
+        .forEach((x) => this._ResetVariable(x));
+    }
   };
 }

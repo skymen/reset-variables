@@ -3,7 +3,7 @@ module.exports = {
   addonType: "plugin",
   id: "skymen_reset_variable",
   name: "reset_variable",
-  version: "1.0.0.1",
+  version: "1.0.0.2",
   category:
     // "3d",
     // "data-and-storage",
@@ -298,6 +298,17 @@ module.exports = {
       listName: "Reset Local Variable By Name",
       displayText: "Reset local variable by name [i]{0}[/i]",
       description: "Reset a local variable to its initial value",
+    },
+    ResetAllLocalVariables: {
+      category: "general",
+      forward: "_ResetAllLocalVariables",
+      autoScriptInterface: true,
+      highlight: true,
+      deprecated: false,
+      params: [],
+      listName: "Reset All Local Variables",
+      displayText: "Reset all local variables",
+      description: "Reset all local variables to their initial values",
     },
   },
   Cnds: {
