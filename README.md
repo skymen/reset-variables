@@ -1,6 +1,6 @@
 <img src="./src/icon.svg" width="100" /><br>
-# reset_variable <br>
-Description <br>
+# Reset Variable <br>
+Reset any event variable to its initial value <br>
 <br>
 Author: skymen <br>
 <sub>Made using [c3ide2-framework](https://github.com/ConstructFund/c3ide2-framework) </sub><br>
