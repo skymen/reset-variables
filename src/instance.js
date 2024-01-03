@@ -57,5 +57,11 @@ function getInstanceJs(parentClass, scriptInterface, addonTriggers, C3) {
         .GetAllLocalVariables()
         .forEach((x) => this._ResetVariable(x));
     }
+
+    _ResetAllGlobalVariables() {
+      this._runtime._eventSheetManager
+        .GetAllGlobalVariables()
+        .forEach((x) => this._ResetVariable(x));
+    }
   };
 }

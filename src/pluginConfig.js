@@ -3,7 +3,7 @@ module.exports = {
   addonType: "plugin",
   id: "skymen_reset_variable",
   name: "Reset Variable",
-  version: "1.0.0.3",
+  version: "1.0.0.4",
   category:
     // "3d",
     // "data-and-storage",
@@ -130,7 +130,9 @@ module.exports = {
   aceCategories: {
     // follows the format id: langName
     // in the ACEs refer to categories using the id, not the name
-    general: "General",
+    all: "All",
+    byId: "ID",
+    name: "Name",
   },
   Acts: {
     /*
@@ -224,7 +226,7 @@ module.exports = {
     },
     */
     ResetVariable: {
-      category: "general",
+      category: "byId",
       forward: "_ResetVariable",
       autoScriptInterface: true,
       highlight: true,
@@ -238,15 +240,15 @@ module.exports = {
           value: "",
         },
       ],
-      listName: "Reset Variable",
-      displayText: "Reset variable [i]{0}[/i]",
-      description: "Reset a variable to its initial value",
+      listName: "Reset Global Variable",
+      displayText: "Reset a global variable [i]{0}[/i]",
+      description: "Reset a global variable to its initial value",
     },
     ResetGlobalVariableByName: {
-      category: "general",
+      category: "name",
       forward: "_ResetGlobalVariableByName",
       autoScriptInterface: true,
-      highlight: true,
+      highlight: false,
       deprecated: false,
       params: [
         {
@@ -262,10 +264,10 @@ module.exports = {
       description: "Reset a global variable to its initial value",
     },
     ResetBooleanVariable: {
-      category: "general",
+      category: "byId",
       forward: "_ResetVariable",
       autoScriptInterface: true,
-      highlight: true,
+      highlight: false,
       deprecated: false,
       params: [
         {
@@ -281,7 +283,7 @@ module.exports = {
       description: "Reset a boolean variable to its initial value",
     },
     ResetLocalVariableByName: {
-      category: "general",
+      category: "name",
       forward: "_ResetLocalVariableByName",
       autoScriptInterface: true,
       highlight: true,
@@ -300,15 +302,26 @@ module.exports = {
       description: "Reset a local variable to its initial value",
     },
     ResetAllLocalVariables: {
-      category: "general",
+      category: "all",
       forward: "_ResetAllLocalVariables",
       autoScriptInterface: true,
-      highlight: true,
+      highlight: false,
       deprecated: false,
       params: [],
       listName: "Reset All Local Variables",
       displayText: "Reset all local variables",
       description: "Reset all local variables to their initial values",
+    },
+    ResetAllGlobalVariables: {
+      category: "all",
+      forward: "_ResetAllGlobalVariables",
+      autoScriptInterface: true,
+      highlight: false,
+      deprecated: false,
+      params: [],
+      listName: "Reset All Global Variables",
+      displayText: "Reset all global variables",
+      description: "Reset all global variables to their initial values",
     },
   },
   Cnds: {
