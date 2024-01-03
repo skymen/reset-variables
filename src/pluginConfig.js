@@ -240,9 +240,9 @@ module.exports = {
           value: "",
         },
       ],
-      listName: "Reset Global Variable",
-      displayText: "Reset a global variable [i]{0}[/i]",
-      description: "Reset a global variable to its initial value",
+      listName: "Reset Variable",
+      displayText: "Reset a variable [i]{0}[/i]",
+      description: "Reset a variable to its initial value",
     },
     ResetGlobalVariableByName: {
       category: "name",
@@ -286,7 +286,7 @@ module.exports = {
       category: "name",
       forward: "_ResetLocalVariableByName",
       autoScriptInterface: true,
-      highlight: true,
+      highlight: false,
       deprecated: false,
       params: [
         {
