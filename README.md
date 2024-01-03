@@ -43,11 +43,12 @@ The main files you may want to look at would be instance.js and scriptInterface.
 ## Actions
 | Action | Description | Params
 | --- | --- | --- |
-| Reset Variable | Reset a variable to its initial value | Variable Name             *(eventvar)* <br> |
+| Reset Global Variable | Reset a global variable to its initial value | Variable Name             *(eventvar)* <br> |
 | Reset Global Variable By Name | Reset a global variable to its initial value | Variable Name             *(string)* <br> |
 | Reset Boolean Variable | Reset a boolean variable to its initial value | Variable Name             *(eventvarbool)* <br> |
 | Reset Local Variable By Name | Reset a local variable to its initial value | Variable Name             *(string)* <br> |
 | Reset All Local Variables | Reset all local variables to their initial values |  |
+| Reset All Global Variables | Reset all global variables to their initial values |  |
 
 
 ---
